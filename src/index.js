@@ -8,7 +8,6 @@ import ProductCategoryRow from './components/ProductCategoryRow';
 // ReactDOM.render(<App />, document.getElementById('root'));
 // registerServiceWorker();
 
-<ProductCategoryRow />
 
 class ProductRow extends React.Component {
   render() {

@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ProductCategoryRow from '../components/ProductCategoryRow';
 
-it('renders without crashing', () => {
-  const tr = document.createElement('div');
-  ReactDOM.render(<ProductCategoryRow />, tr);
+test('the props in Product Category Row are defined', () => {
+  expect(ProductCategoryRow('these are hypothetical props')).toBeDefined();
 });
