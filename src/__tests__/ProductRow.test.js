@@ -1,11 +1,8 @@
 
-
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme';
 import ProductRow from '../components/ProductRow';
 
-it('ProductRow is rendered', () => {
-  const product =
-  const tr = document.createElement('tr');
-  ReactDOM.render(<ProductRow />, tr);
+it('renders without crashing', () => {
+  shallow(<ProductRow product={product} key={product.name} />);
 });
