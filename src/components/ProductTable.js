@@ -4,11 +4,19 @@ import ProductRow from './ProductRow';
 
 const ProductTable = (props) =>{
 
-    // const product = props.product;
+    const filterText = props.filterText;
+    const inStockOnly = props.inStockOnly;
+
     const rows = [];
     let lastCategory = null;
 
     props.products.forEach((product) => {
+     if (product.name.indexOf(filterText) === -1) {
+        return;
+      }
+      if (inStockOnly && !product.stocked) {
+        return;
+      }
       if (product.category !== lastCategory) {
         rows.push(
           <ProductCategoryRow
