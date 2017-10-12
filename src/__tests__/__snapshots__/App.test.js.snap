@@ -7,15 +7,11 @@ exports[`App (Snapshot) App renders without crashing 1`] = `
   <div>
     <form>
       <input
-        onChange={[Function]}
         placeholder="Search..."
         type="text"
-        value=""
       />
       <p>
         <input
-          checked={false}
-          onChange={[Function]}
           type="checkbox"
         />
          
